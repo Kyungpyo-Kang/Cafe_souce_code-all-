@@ -64,6 +64,7 @@
         </thead>
         
         <form action="{%url 'delete'%}">
+        <input type="hidden" name='flag' value=0>
         {%for product in products%}
         <tbody>
             <tr>

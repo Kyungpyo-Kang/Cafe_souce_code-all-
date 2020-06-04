@@ -50,7 +50,7 @@
         </div>
       </div>
       <br>
-      <a class="btn btn-outline-success my-2 my-sm-0" href="{%url 'setseq' %}">새로고침</a>
+      <a class="btn btn-outline-success my-2 my-sm-0" href="{% url 'setseq'%}">새로고침</a>
       <br>
       <table class="table">
         <thead>
@@ -62,6 +62,7 @@
             </tr>
         </thead>
         <form action="{%url 'delete'%}">
+        <input type="hidden" name='flag' value=1>
         {% for product in products.all %}
         <tbody>
             <tr>

@@ -1,0 +1,1 @@
+web: gunicorn Day03.wsgi --log-file -

@@ -1,0 +1,53 @@
+2020-06-04T16:55:12,764 Non-user install because user site-packages disabled
+2020-06-04T16:55:12,795 Created temporary directory: /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-ephem-wheel-cache-8t9ud1jw
+2020-06-04T16:55:12,795 Created temporary directory: /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-req-tracker-mw7f4j68
+2020-06-04T16:55:12,796 Initialized build tracking at /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-req-tracker-mw7f4j68
+2020-06-04T16:55:12,796 Created build tracker: /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-req-tracker-mw7f4j68
+2020-06-04T16:55:12,796 Entered build tracker: /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-req-tracker-mw7f4j68
+2020-06-04T16:55:12,797 Created temporary directory: /private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-install-sbb6y5fh
+2020-06-04T16:55:12,798 Cleaning up...
+2020-06-04T16:55:12,799 Removed build tracker: '/private/var/folders/bl/4lt3zcrd545fjb518mp1lhjm0000gn/T/pip-req-tracker-mw7f4j68'
+2020-06-04T16:55:12,799 ERROR: Invalid requirement: 'web:'
+2020-06-04T16:55:12,800 Exception information:
+2020-06-04T16:55:12,800 Traceback (most recent call last):
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/packaging/requirements.py", line 98, in __init__
+2020-06-04T16:55:12,800     req = REQUIREMENT.parseString(requirement_string)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 1947, in parseString
+2020-06-04T16:55:12,800     raise exc
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 1937, in parseString
+2020-06-04T16:55:12,800     loc, tokens = self._parse(instring, 0)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 1677, in _parseNoCache
+2020-06-04T16:55:12,800     loc, tokens = self.parseImpl(instring, preloc, doActions)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 4052, in parseImpl
+2020-06-04T16:55:12,800     loc, exprtokens = e._parse(instring, loc, doActions)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 1681, in _parseNoCache
+2020-06-04T16:55:12,800     loc, tokens = self.parseImpl(instring, preloc, doActions)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/pyparsing.py", line 3798, in parseImpl
+2020-06-04T16:55:12,800     raise ParseException(instring, loc, self.errmsg, self)
+2020-06-04T16:55:12,800 pip._vendor.pyparsing.ParseException: Expected stringEnd, found ':'  (at char 3), (line:1, col:4)
+2020-06-04T16:55:12,800 
+2020-06-04T16:55:12,800 During handling of the above exception, another exception occurred:
+2020-06-04T16:55:12,800 
+2020-06-04T16:55:12,800 Traceback (most recent call last):
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/req/constructors.py", line 356, in parse_req_from_line
+2020-06-04T16:55:12,800     req = Requirement(req_as_string)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_vendor/packaging/requirements.py", line 100, in __init__
+2020-06-04T16:55:12,800     raise InvalidRequirement(
+2020-06-04T16:55:12,800 pip._vendor.packaging.requirements.InvalidRequirement: Parse error at "':'": Expected stringEnd
+2020-06-04T16:55:12,800 
+2020-06-04T16:55:12,800 During handling of the above exception, another exception occurred:
+2020-06-04T16:55:12,800 
+2020-06-04T16:55:12,800 Traceback (most recent call last):
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/cli/base_command.py", line 186, in _main
+2020-06-04T16:55:12,800     status = self.run(options, args)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/commands/install.py", line 299, in run
+2020-06-04T16:55:12,800     self.populate_requirement_set(
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/cli/req_command.py", line 246, in populate_requirement_set
+2020-06-04T16:55:12,800     req_to_add = install_req_from_line(
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/req/constructors.py", line 395, in install_req_from_line
+2020-06-04T16:55:12,800     parts = parse_req_from_line(name, line_source)
+2020-06-04T16:55:12,800   File "/Users/kyungpyokang/Documents/개발/멋사/myvenv/lib/python3.8/site-packages/pip/_internal/req/constructors.py", line 371, in parse_req_from_line
+2020-06-04T16:55:12,800     raise InstallationError(msg)
+2020-06-04T16:55:12,800 pip._internal.exceptions.InstallationError: Invalid requirement: 'web:'
+2020-06-04T16:55:12,890 WARNING: You are using pip version 20.0.2; however, version 20.1.1 is available.
+2020-06-04T16:55:12,890 You should consider upgrading via the '/Users/kyungpyokang/Documents/개발/멋사/myvenv/bin/python3 -m pip install --upgrade pip' command.
